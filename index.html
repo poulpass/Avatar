@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Avatar</title>
+
+</head>
+<body>
+    <main>
+        <canvas width="221" height="311" id="fullAvatar" >
+        </canvas>
+
+        <form>
+            <input type="button" value="↑" class="itemselect" id="up" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft" id="left0" data-avatar="plus">
+            <input type="button" value="jacket" class="item itemSelected"  id="jacket" data-avatar="0">
+            <input type="button" value="->" class="changeLookRight" id="right0" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft hide" id="left1" data-avatar="plus">
+            <input type="button" value="skirt" class="item" id="skirt" data-avatar="1">
+            <input type="button" value="->" class="changeLookRight hide" id="right1" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft hide" id="left2" data-avatar="plus">
+            <input type="button" value="skin" class="item" id="skin" data-avatar="2">
+            <input type="button" value="->" class="changeLookRight hide" id="right2" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft hide" id="left3" data-avatar="plus">
+            <input type="button" value="head" class="item" id="head" data-avatar="3">
+            <input type="button" value="->" class="changeLookRight hide" id="right3" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft hide" id="left4" data-avatar="plus">
+            <input type="button" value="face" class="item" id="face" data-avatar="4">
+            <input type="button" value="->" class="changeLookRight hide" id="right4" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft hide" id="left5" data-avatar="plus">
+            <input type="button" value="hairs" class="item" id="hairs" data-avatar="5">
+            <input type="button" value="->" class="changeLookRight hide" id="right5" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft hide" id="left6" data-avatar="plus">
+            <input type="button" value="stuff" class="item" id="stuff" data-avatar="6">
+            <input type="button" value="->" class="changeLookRight hide" id="right6" data-avatar="plus">
+            <br>
+            <input type="button" value="<-" class="changeLookleft hide" id="left7" data-avatar="plus">
+            <input type="button" value="↓" class="itemselect" id="dwn" data-avatar="plus">
+            <input type="button" value="->" class="changeLookRight hide" id="right7" data-avatar="plus">
+            <br>
+            <input id="idTruc" type="number" value="0" min="0" max="7" class="">
+
+        </form>
+        
+<!--------------------------------Chromatique-----------------------------------------------
+        <div id="colorManager">
+            <input id="idTruc" type="number" value="0" min="0" max="7">
+            <p>couleur</p>
+            <input id="chroma"  type="range" min="0" max="255" value="90">
+                
+            <p>saturation</p>
+            <input id="g"  type="range" min="0" max="255" value="100">
+               
+            <p>luminosité</p>
+            <input id="b"  type="range" min="0" max="255" value="100">
+        </div>
+-----------------------------------RGB-------------------------------------------->
+        <div id="colorManager">
+                <p>Red</p>
+                <input id="r"  type="range" min="0" max="255" value="90" style="background : linear-gradient(to right, black, red, white);">
+                    
+                <p>Green</p>
+                <input id="g"  type="range" min="0" max="255" value="100" style="background : linear-gradient(to right, black, green, white);">
+                   
+                <p>Blue</p>
+                <input id="b"  type="range" min="0" max="255" value="100" style="background : linear-gradient(to right, black, blue, white);">
+            </div>
+    </main>
+
+    
+
+
+    <button id="print">print</button>
+
+    <script src="js/avatarLib.js"></script>
+
+</body>
+</html>
